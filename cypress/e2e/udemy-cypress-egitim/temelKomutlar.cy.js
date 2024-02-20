@@ -44,6 +44,9 @@ describe('Temel Komutlar', () => {
             cy.log("Bir mesaj") // Console istedigimizi yazdirmak icin kullanilir.
 
         });
+        it('', () => {
+            
+        });
 
 });
 
