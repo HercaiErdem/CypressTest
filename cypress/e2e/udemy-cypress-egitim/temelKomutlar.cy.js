@@ -45,7 +45,7 @@ describe('Temel Komutlar', () => {
 
         });
         it('', () => {
-            
+
         });
 
 });
