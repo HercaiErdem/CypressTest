@@ -12,6 +12,5 @@
   "cy:test:chrome": "cypress run --browser chrome",
   "cy:verify": "cypress verify"
 
-
 }
 }
