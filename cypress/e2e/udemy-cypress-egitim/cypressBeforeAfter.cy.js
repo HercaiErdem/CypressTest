@@ -7,8 +7,10 @@ describe('Using of Before After', () => {
     after(() => {
         cy.log("Example of using After")
     });
-    it('Assert the title', () => {
+    it('Assert the title and the url', () => {
         cy.title().should("eq", "Automation Exercise")
+        cy.url().should("include", "automationexercise.com")
         
     });
+
 });
