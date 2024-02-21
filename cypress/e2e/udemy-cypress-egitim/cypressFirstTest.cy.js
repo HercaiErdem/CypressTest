@@ -11,8 +11,6 @@ it('Second Test', () => {
     cy.title().should("include", "Automation")
     cy.url().should("include", "automationexercise.com/")
 
-
 });
-
 
 });
