@@ -29,7 +29,7 @@ describe('Temel Komutlar', () => {
             cy.location("hostname").should("include", "cypress.oi") // url de cypress.oi geciyorsa dogrular
         });
 
-        it('Temel Komutlar cy.get Kullanimi', () => {
+        it('Temel Komutlar cy.get Kullanimi', () => {  // DOM'lar icin(locate alirken)
             cy.get("#button") //dogru kullanimi
             cy.get("#button").as("deneme") // cy.get(@deneme) // button locate ini deneme'ye assign ediyoruz.
             // Baska bi yerde surekli button dememize gerek yok.
@@ -44,9 +44,7 @@ describe('Temel Komutlar', () => {
             cy.log("Bir mesaj") // Console istedigimizi yazdirmak icin kullanilir.
 
         });
-        it('', () => {
 
-        });
 
 });
 
