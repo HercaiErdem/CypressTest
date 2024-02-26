@@ -5,7 +5,7 @@ describe('Custom Commands', () => {
         cy.visit("https://automationexercise.com/login")
     });
 
-    it('Custom Commands Using Examples Invalid Username Invalid Password', () => {
+    it('Custom Commands Using Examples Invalid Username Invalid Password', () => { // commands.js file'inin icine bu parametlere konuldu.
       //  cy.visit("https://automationexercise.com/login")
      // cy.get("input[data-qa='login-email']").type("deneme@gmail.com")
       //  cy.get("input[data-qa='login-password']").type("denemePassword")

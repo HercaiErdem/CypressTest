@@ -24,10 +24,19 @@
 // -- This will overwrite an existing command --
 // Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
 
-Cypress.Commands.add("login", (username, password) => {
+// Cypress.Commands.add("login", (username, password) => {
    // cy.visit("https://automationexercise.com/login")
-    cy.get("input[data-qa='login-email']").type(username)
-    cy.get("input[data-qa='login-password']").type(password)
-    cy.get("button[data-qa='login-button']").click()
+  //  cy.get("input[data-qa='login-email']").type(username)
+  //  cy.get("input[data-qa='login-password']").type(password)
+  //  cy.get("button[data-qa='login-button']").click() //POM kullanmassak boyle yazacagiz
+
+// })
+
+import customCommandsLogin from "../pageObjectModel/customCommandsLogin";
+Cypress.Commands.add("login", (username, password) => {
+   
+    customCommandsLogin.usernameField.type("username")
+    customCommandsLogin.passwordField.type("password")
+    customCommandsLogin.loginBtn.click()
 
 })
